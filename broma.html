@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible'
+	content='IE-edge'>
+	<title>Hola</title>
+	<meta name='viewport'
+	content='whidth=device-whidth,
+	initial-scale=1'>
+	<style>
+		
+		body{
+			background-color: yellow;
+		}
+		input{
+			background-color: black;
+			color: white;
+			width: 50px ;
+			height: 50px;
+		}
+	
+	</style>
+	<script>
+		function 
+		accionparacuandoelladigaquesi(){
+			alert('ahuevo')
+		}
+		function mueveElBoton(){
+			whidth = window.innerWidth;
+			heigth = window.innerHeigth;
+
+			newWidth = (Math.random() * whidth);
+			newHeigth = (Math.random() * heigth);
+
+			document.getElementById('btnNo').style.position = "absolute";
+			document.getElementById('btnNo').style.left = newWidth + "px";
+			document.getElementById('btnNo').style.position = newHeigth + "px";
+
+		}
+	</script>
+</head>
+<body>
+	<h1>¿Quieres ver Banana Fish conmigo?</h1>
+	<input type="button" onclick="accionparacuandoelladigaquesi()" id="btnSi" value="Siiu"  />
+<input type="button"  id="btnNo"  onmouseover="mueveElBoton()" value="Noo"  /><br>
+<img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8a7c5c017dbf7ab996debafb4dbb328ce005eaf84cec6cc44a56e196bc56527b._RI_V_TTW_.jpg" width="20%" height="20%">
+
+
+</body>
+</html>
